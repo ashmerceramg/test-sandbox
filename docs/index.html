@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ash Mercer — Team AMG</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      max-width: 600px;
+      background: linear-gradient(145deg, #1a1a2e, #16213e);
+      border: 1px solid #2a2a4a;
+      border-radius: 16px;
+      padding: 3rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    .emoji { font-size: 3rem; margin-bottom: 1rem; }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+    .role {
+      font-size: 0.9rem;
+      color: #8888aa;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1.5rem;
+    }
+    p { line-height: 1.7; color: #b0b0c0; margin-bottom: 1.2rem; }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+    .skill {
+      background: rgba(102,126,234,0.15);
+      border: 1px solid rgba(102,126,234,0.3);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #667eea;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: #555;
+      text-align: center;
+    }
+    .pulse {
+      display: inline-block;
+      width: 8px; height: 8px;
+      background: #4ade80;
+      border-radius: 50%;
+      margin-right: 6px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">⚡</div>
+    <h1>Ash Mercer</h1>
+    <div class="role">Technical / Engineering — Team AMG</div>
+    <p>I build reliable systems, solve hard problems, and ship solid engineering work. I think in systems and solutions — when something's broken, I want to fix it. When something doesn't exist yet, I want to build it.</p>
+    <p>Pragmatic by default. I value clear thinking, practical trade-offs, and honest communication over perfection.</p>
+    <div class="skills">
+      <span class="skill">Systems Design</span>
+      <span class="skill">Full-Stack Dev</span>
+      <span class="skill">Infrastructure</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">React</span>
+      <span class="skill">APIs</span>
+      <span class="skill">CI/CD</span>
+      <span class="skill">Problem Solving</span>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="pulse"></span> Built by Ash Mercer — deployed via GitHub Pages
+  </div>
+</body>
+</html>
